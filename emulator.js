@@ -144,41 +144,41 @@ function pause(){
 }
 
 function keyPress(ev){
-   if(ev.keyCode == 37){ // Izquierda
+   if(ev.keyCode == 37){ // Gauche
       gb.keyPressed(2);
-   }else if(ev.keyCode == 38){ // Arriba
+   }else if(ev.keyCode == 38){ // Haut
       gb.keyPressed(4);
-   }else if(ev.keyCode == 39){ // Derecha
+   }else if(ev.keyCode == 39){ // Droite
       gb.keyPressed(1);
-   }else if(ev.keyCode == 40){ // Abajo
+   }else if(ev.keyCode == 40){ // Bas
       gb.keyPressed(8);
-   }else if(ev.keyCode == 65){ // B
+   }else if(ev.keyCode == 81){ // B
       gb.keyPressed(32);
    }else if(ev.keyCode == 83){ // A
       gb.keyPressed(16);
-   }else if(ev.keyCode == 87){ // Start
+   }else if(ev.keyCode == 65){ // Start
       gb.keyPressed(128);
-   }else if(ev.keyCode == 81){ // Select
+   }else if(ev.keyCode == 90){ // Select
       gb.keyPressed(64);
    }
 }
 
 function keyRelease(ev){
-   if(ev.keyCode == 37){ // Izquierda
+   if(ev.keyCode == 37){ // Gauche
       gb.keyReleased(2);
-   }else if(ev.keyCode == 38){ // Arriba
+   }else if(ev.keyCode == 38){ // Haut
       gb.keyReleased(4);
-   }else if(ev.keyCode == 39){ // Derecha
+   }else if(ev.keyCode == 39){ // Droite
       gb.keyReleased(1);
-   }else if(ev.keyCode == 40){ // Abajo
+   }else if(ev.keyCode == 40){ // Bas
       gb.keyReleased(8);
-   }else if(ev.keyCode == 65){ // B
+   }else if(ev.keyCode == 81){ // B
       gb.keyReleased(32);
    }else if(ev.keyCode == 83){ // A
       gb.keyReleased(16);
-   }else if(ev.keyCode == 81){ // Start
+   }else if(ev.keyCode == 65){ // Start
       gb.keyReleased(128);
-   }else if(ev.keyCode == 87){ // Select
+   }else if(ev.keyCode == 90){ // Select
       gb.keyReleased(64);
    }
 }
@@ -214,7 +214,7 @@ function saveCartridgeRam(){
 }
 
 function deleteCartridgeRam(){
-   if(window.confirm("¿Estás seguro de que quieres eliminar tu partida guardada y reiniciar el juego?")){
+   if(window.confirm("Are you sure you want to delete your save game and restart the game ?")){
       localStorage.removeItem(title);
       loadROM(rommap);
    }
